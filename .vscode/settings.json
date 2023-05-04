@@ -1,0 +1,12 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "yaviraconnection",
+            "group": "yaviracgroup",
+            "database": "databasefile"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
