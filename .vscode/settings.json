@@ -6,7 +6,17 @@
             "name": "yaviraconnection",
             "group": "yaviracgroup",
             "database": "databasefile"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "dbavanzed",
+            "username": "user-name",
+            "database": "postgres"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "liveServer.settings.port": 5501
 }
