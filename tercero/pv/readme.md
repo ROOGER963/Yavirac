@@ -4,13 +4,13 @@ Brief description of the project.
 
 ## Tabla de contenido
 
-- [Introduccion a Typescript](#Introduccion a Typescript)
+- [Introduccion](#Introduccion)
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduccion a Typescript
+## Introduccion
 
 Instructions for installing the project.
 
