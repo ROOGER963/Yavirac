@@ -1,16 +1,16 @@
-# Project Title
+# 3DS-PROGRAMACIÓN VISUAL
 
 Brief description of the project.
 
-## Table of Contents
+## Tabla de contenido
 
-- [Installation](#installation)
+- [Introduccion a Typescript](#Introduccion a Typescript)
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## Introduccion a Typescript
 
 Instructions for installing the project.
 
