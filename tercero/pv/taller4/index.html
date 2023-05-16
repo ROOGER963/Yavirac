@@ -10,14 +10,15 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
+    <script>let exports = {};</script>
+    <script src="dist/main.js"></script>
 </head>
 
 <body>
   <header>
     <!-- place navbar here -->
   </header>
-  <main>
+  <main >
     <div class="card">
         <div class="card-header">
             <H1>FORMULARIO DE INGRESO</H1> 
@@ -27,58 +28,90 @@
            <div class="card">
                <div class="card-header">
                 <hr>
-                 <H2>ESTUDIANTES</H2>  
-               
-           
-           <div class="mb-3">
-             <label for="nameStudent" class="form-label">Nombre</label>
-             <input type="text" name="nameStudent" id="nameStudent" class="form-control" placeholder="ingresanombre" aria-describedby="helpId">
-             <small id="helpId" class="text-muted">Help text</small>
-           </div>
-           
-           <div class="mb-3">
-               <label for="identificationStudent" class="form-label">Identificacion</label>
-               <input type="text" name="identificationStudent" id="identificationStudent" class="form-control" placeholder="Identificacion" aria-describedby="helpId">
-               <small id="helpId" class="text-muted">Help text</small>
-             </div>
-           
-             <div class="mb-3">
-               <label for="addressStudent" class="form-label">Direccion</label>
-               <input type="text" name="addressStudent" id="addressStudent" class="form-control" placeholder="direccion studiante" aria-describedby="helpId">
-               <small id="helpId" class="text-muted">Help text</small>
-             </div>  
-           
-             <div class="mb-3">
-               <label for="registrationCodeStudent" class="form-label">Numero de matricula</label>
-               <input type="text" name="registrationCodeStudent" id="registrationCodeStudent" class="form-control" placeholder="numero matricula" aria-describedby="helpId">
-               <small id="helpId" class="text-muted">Help text</small>
-             </div> 
-           
-             <div class="mb-3">
-               <label for="carrerStudent" class="form-label">Carrera</label>
-               <input type="text" name="carrerStudent" id="carrerStudent" class="form-control" placeholder="carrera studiante" aria-describedby="helpId">
-               <small id="helpId" class="text-muted">Help text</small>
-             </div>   
-           
-             <div class="mb-3">
-               <label for="levelStudent" class="form-label">Nivel</label>
-               <input type="text" name="levelStudent" id="levelStudent" class="form-control" placeholder="nivel studiante" aria-describedby="helpId">
-               <small id="helpId" class="text-muted">Help text</small>
-             </div>     
-           
+
+                  <H2>ESTUDIANTES</H2>  
                </div>
-               <div class="card-footer text-muted">
-                   <button class="btn btn-primary" onclick="addStudent()">registrar</button>
-                   <script>let exports = {};</script>
-                   <script src="./dist/main.js"></script>
-               </div>
-           </div>
-           </div>
-        <div class="card-footer text-muted">
-            Footer
+               <div class="card-body">
+                <div class="mb-3">              
+                  <label for="nameStudent" class="form-label">Nombre</label>
+                  <input type="text" name="name" id="nameStudent" class="form-control" placeholder="nombre del estudiante" aria-describedby="helpId">
+                  <label for="identStudent" class="form-label">Cédula</label>
+                  <input type="text" name="id" id="identStudent" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+                  <label for="adressStudent" class="form-label">Dirección</label>
+                  <input type="text" name="address" id="adressStudent" class="form-control" placeholder="direccion de domicillio" aria-describedby="helpId">
+                  <label for="registrationStudent" class="form-label">Numero de Matricula</label>
+                  <input type="text" name="registration" id="registrationStudent" class="form-control" placeholder="numero de matricula" aria-describedby="helpId">  
+                  <label for="carrerStudent" class="form-label">Nivel</label>
+                  <input type="text" name="carrer" id="carrerStudent" class="form-control" placeholder="nivel en el que esta" aria-describedby="helpId">
+                  <label for="levelStudent" class="form-label">Carrera</label>
+                  <input type="text" name="level" id="levelStudent" class="form-control" placeholder="que carrera sigue" aria-describedby="helpId">
+                 </div>
+                 <div class="card-footer text-muted">
+                  <button class="btn btn-primary" onclick="addStudent()">Agregar</button>
+                 </div>
+          </div>
+    </div>
+    <br>
+    <div class="card">
+            <div class="card-header">
+              
+              <h3>Profesor</h3> 
+            </div>
+            <hr>
+            <div class="card-body">
+               <div class="mb-3">
+                 <label for="nameTeacher" class="form-label">Nombre</label>
+                 <input type="text" name="name" id="nameTeacher" class="form-control" placeholder="nombre del profesor" aria-describedby="helpId">
+                 <label for="idTeacher" class="form-label">Cédula</label>
+                 <input type="text" name="id" id="idTeacher" class="form-control" placeholder="numero de cedula" aria-describedby="helpId">
+                 <div class="mb-3">
+                  <label for="carrerTeacher" class="form-label">Carrera</label>
+                  <br>
+                  <div class="mb-3">
+                    <label for="" class="form-label">City</label>              
+                  </div>
+                  <select class="form-select form-select-sm" name="carrerTeacher" id="carrerTeacher">
+                    <option value="turismo">Turismo</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="software">sowtware</option>   
+                   </select>
+                 </div>
+                 <input type="text" name="address" id="addressTeacher" class="form-control" placeholder="direccion de domicillio" aria-describedby="helpId">
+                 <label for="titleTeacher" class="form-label">Titulo</label>
+                 <input type="text" name="title" id="titleTeacher" class="form-control" placeholder="titulo" aria-describedby="helpId">
+                 <label for="asignatureTeacher" class="form-label">Asignatura</label>
+                 <br>
+                  <select class="form-select form-select-sm" name="asignatureTeacher" id="asignatureTeacher">
+                    <option value="Interfaces">Interfaces</option>
+                    <option value="Programacion">Programacion</option>
+                    <option value="Metodologias">Metodologias</option>   
+                   </select>
+                 </div>
+                </div>
+                <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addTeacher()">Agregar</button>
+              </div>
+            </div>
+            <hr>
+            <div class="card">
+              <div class="card-header">
+                 <h3>CURSOS</h3> 
+              </div>
+              <hr>
+              <div class="card-body">
+                 <div class="mb-3">
+                   <label for="areaCourse" class="form-label">Area</label>
+                   <input type="text" name="area" id="areaCourse" class="form-control" placeholder="seleccione su area" aria-describedby="helpId">
+                   <label for="nameCourse" class="form-label">Name</label>
+                   <input type="text" name="name" id="nameCourse" class="form-control" placeholder="numero de cedula" aria-describedby="helpId"> 
+                  </div>
+              </div>
+              <div class="card-footer text-muted">
+                  <button class="btn btn-primary"onclick="addCourse()">Agregar</button>
+              </div>
+          </div>
         </div>
     </div>
-
   </main>
   <footer>
     <!-- place footer here -->
@@ -91,6 +124,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
+
 </body>
 
 </html>
