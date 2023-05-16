@@ -32,7 +32,6 @@ function addTeacher(){
        adress: readHtml("addressTeacher"),
        title:readHtml("titleTeacher"),
        asignature: readHtml("asignatureTeacher") as "Interfaces" | "Programacion" | "Metodologias",
-       carrer: readHtml("carrerTeacher"),
     }
     teachers.push(currentTeacher);
     console.log(teachers);
