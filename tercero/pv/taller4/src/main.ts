@@ -37,11 +37,11 @@ function addStudent(): void{
 
 function addTeacher(): void{
     let currentTeacher: Teacher = {
-       name: readHtml("nameTeacher"),
-       dni: readHtml( readHtml("idTeacher")),
-       adress: readHtml("addressTeacher"),
-       title:readHtml("titleTeacher"),
-       asignature: readHtml("asignatureTeacher") as "Interfaces" | "Programacion" | "Metodologias",
+       name: readFromHtml("nameTeacher"),
+       dni: readFromHtml("idTeacher"),
+       adress: readFromHtml("addressTeacher"),
+       title:readFromHtml("titleTeacher"),
+       asignature: readFromHtml("asignatureTeacher") as "Interfaces" | "Programacion" | "Metodologias",
     }
     teachers.push(currentTeacher);
     console.log(teachers);
