@@ -218,43 +218,46 @@ class Gradebook {
 
 }
 
-function generateReport(): void{
-    let reportGrade: Gradebook = new Gradebook(
-        students, 
-        activities, 
-        gradebookSetups, 
-        assignments, 
-        teachers
-    );
-    
-    let rowReport: GradebookDTO[] = reportGrade.buildGradebookDTOFromAssignment();
-    let reportTable: HTMLTableElement = document.getElementById("report") as HTMLTableElement;
+function generateReport(): void {
+  let reportGrade: Gradebook = new Gradebook(
+    students,
+    activities,
+    gradebookSetups,
+    assignments,
+    teachers
+  );
 
-        rowReport.forEach((itemDTO) => {
-        let tr: HTMLTableRowElement = reportTable.insertRow();
+  let rowReport: GradebookDTO[] = reportGrade.buildGradebookDTOFromAssignment();
+  let reportTable: HTMLTableElement = document.getElementById("report") as HTMLTableElement;
+
+  rowReport.forEach((itemDTO) => {
+    let tr: HTMLTableRowElement ;
     
-        // Curso
-        let courseCell: HTMLTableCellElement = tr.insertCell();
-        courseCell.innerHTML = itemDTO.course;
+    let td: HTMLTableCellElement;
     
-        // Estudiante
-        let studentCell: HTMLTableCellElement = tr.insertCell();
-        studentCell.innerHTML = itemDTO.studentName;
+    tr = reportTable.insertRow(0)
+    // Curso
+    td = tr.insertCell(0);
+    td.innerHTML = itemDTO.course;
     
-        // DNI
-        let dniCell: HTMLTableCellElement = tr.insertCell();
-        dniCell.innerHTML = itemDTO.dni;
+    // Estudiante
+    td = tr.insertCell(1);
+    td.innerHTML = itemDTO.studentName;
     
-        // Nivel
-        let levelCell: HTMLTableCellElement = tr.insertCell();
-        levelCell.innerHTML = itemDTO.level;
-    
-        // Asignatura
-        let assignmentCell: HTMLTableCellElement = tr.insertCell();
-        assignmentCell.innerHTML = itemDTO.gradebooksetup;
-    
-        // Calificación
-        let gradeCell: HTMLTableCellElement = tr.insertCell();
-        gradeCell.innerHTML = itemDTO.grade.toString();
-      });
-    }
+    // DNI
+    td = tr.insertCell(2);
+    td.innerHTML = itemDTO.dni;
+
+    // Nivel
+    td = tr.insertCell(3);
+    td.innerHTML = itemDTO.level;
+
+    // Asignatura
+    td = tr.insertCell(4);
+    td.innerHTML = itemDTO.gradebooksetup;
+
+    // Calificación
+    td = tr.insertCell(5);
+    td.innerHTML = itemDTO.grade.toString();
+  });
+}
