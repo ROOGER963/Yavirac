@@ -168,12 +168,24 @@ function generateReport() {
     let rowReport = reportGrade.buildGradebookDTOFromAssignment();
     let reportTable = document.getElementById("report");
     rowReport.forEach((itemDTO) => {
-        let tr;
-        let td;
-        tr = reportTable.insertRow(0);
-        td = tr.insertCell(0);
-        td.innerHTML = itemDTO.course;
-        td = tr.insertCell(1);
-        td.innerHTML = itemDTO.student;
+        let tr = reportTable.insertRow();
+        // Curso
+        let courseCell = tr.insertCell();
+        courseCell.innerHTML = itemDTO.course;
+        // Estudiante
+        let studentCell = tr.insertCell();
+        studentCell.innerHTML = itemDTO.studentName;
+        // DNI
+        let dniCell = tr.insertCell();
+        dniCell.innerHTML = itemDTO.dni;
+        // Nivel
+        let levelCell = tr.insertCell();
+        levelCell.innerHTML = itemDTO.level;
+        // Asignatura
+        let assignmentCell = tr.insertCell();
+        assignmentCell.innerHTML = itemDTO.gradebooksetup;
+        // Calificación
+        let gradeCell = tr.insertCell();
+        gradeCell.innerHTML = itemDTO.grade.toString();
     });
 }

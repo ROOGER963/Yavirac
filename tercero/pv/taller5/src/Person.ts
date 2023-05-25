@@ -1,6 +1,2 @@
-export let saludo:string = "Hola curso"
+export let saludo:string = "hola mundo";
 
-
-export interface Person {
-
-}
