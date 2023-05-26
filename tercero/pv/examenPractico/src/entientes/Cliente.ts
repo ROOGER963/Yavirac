@@ -1,3 +1,4 @@
+// Roger Pineda
 import { Persona } from "./Persona";
 
 export interface Cliente extends Persona{
