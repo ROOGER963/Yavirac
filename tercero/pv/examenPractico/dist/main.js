@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log(" ");
+console.log("  Roger Pineda ");
 let clientes = [];
 let vendedores = [];
 var Seccion;

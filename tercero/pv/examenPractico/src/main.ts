@@ -1,4 +1,4 @@
-console.log(" ")
+console.log("  Roger Pineda ")
 import { Cliente } from "./entientes/Cliente";
 import { Vendedor } from "./entientes/Vendedor";
 
