@@ -5,32 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { NavigationComponent } from './shared/navigation/navigation.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
-import { HeaderComponent } from './shared/header/header.component';
+
+
+import { LoginComponent } from './auth/login/login.component';
+import { MaterialModule } from 'src/material.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidebarComponent,
-    NavigationComponent,
-    HeaderComponent
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
