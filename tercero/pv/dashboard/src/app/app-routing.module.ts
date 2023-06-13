@@ -7,19 +7,25 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { HomeComponent } from './pages/home/home.component';
 //import { UserComponent } from './user/user.component';
+import { NoPagesFoundComponent } from './pages/no-pages-found/no-pages-found.component';
 
 const routes: Routes = [
- { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-// { path: '**', component: NoPagesFoundComponent },
-// {component:HomeComponent,path:'',canActivate:[AuthGuard]},
+{ path: '', redirectTo: '/home', pathMatch: 'full' },
+{ component: HomeComponent , path: 'home' },
+{ component: NoPagesFoundComponent, path: '**', },
+
+
 // {component:UserComponent,path:'user',canActivate:[AuthGuard]},
 // {component:CustomerComponent,path:'customer',canActivate:[AuthGuard]},
 ];
 
 @NgModule({
   declarations:[],
-  imports: [BrowserModule, RouterModule.forRoot(routes), AuthRoutingModule
+  imports: [BrowserModule, RouterModule.forRoot(routes), 
+    AuthRoutingModule,
+    
   ],
   exports: [RouterModule]
 })

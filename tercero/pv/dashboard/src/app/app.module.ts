@@ -3,36 +3,41 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { LoginComponent } from './auth/login/login.component';
-import { MaterialModule } from 'src/material.module';
-import { RegisterComponent } from './auth/register/register.component';
-import { NavigationComponent } from './shared/navigation/navigation.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LoginComponent } from './auth/login/login.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NoPagesFoundComponent } from './pages/no-pages-found/no-pages-found.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
     NavigationComponent,
-
+    HomeComponent,
+    NoPagesFoundComponent,
+    
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    NgbModule,
-    MaterialModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
+    NoopAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
     MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatSidenavModule,
     MatListModule
   ],
   providers: [],
