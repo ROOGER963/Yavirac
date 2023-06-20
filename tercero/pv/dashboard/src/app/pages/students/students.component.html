@@ -1,0 +1,75 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>AdminPRO</mat-toolbar>
+    <mat-nav-list>
+      <div align="center">
+      <img src="../../../assets/logoRP2.png" class="avatar" mat-elevation-z8 alt="">
+      <H4 class="name">Roger Pineda</H4>
+      <p class="designation">Desarrollador de software</p>
+    </div>
+    <mat-divider></mat-divider>
+
+
+    <a mat-list-item href="#">
+      <mat-icon>speed</mat-icon>
+      <span>Dashboard</span>
+    </a>
+    <a mat-list-item href="#">
+      <mat-icon>track_changes</mat-icon>
+      <span>Apps</span>
+    </a>
+    <a mat-list-item href="#">
+      <mat-icon>email</mat-icon>
+      <span>Inbox</span>
+    </a>
+    <a mat-list-item href="#">
+      <mat-icon>hub</mat-icon>
+      <span>Ui Elements</span>
+    </a>
+      <span class="forms-widget">FORMS,TABLE & WIDGETS</span>
+    <a mat-list-item href="#">
+      <mat-icon>insert_drive_file</mat-icon>
+      <span>Forms</span>
+    </a>
+    <a mat-list-item href="#">
+      <mat-icon>table_chart</mat-icon>
+      <span>Tables</span>
+    </a>
+    
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span> {{title}} </span>
+      <span class="space"></span>
+      <button mat-button>
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>message</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>email</mat-icon>
+      </button>
+      <button mat-button>
+        <mat-icon>apps</mat-icon>
+      </button>
+      <button mat-button>
+      <img src="../../../assets/logoRP.png" alt="">
+      </button>      
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-dashboard></app-dashboard>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,57 @@
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.space{
+  flex: 1 1 auto;
+}
+img{ 
+  height: auto;
+  border-radius: 1rem;
+  }
+.sidenav{
+  background: rgb(49, 57, 67);
+  border-radius: 3rem;
+  border: 1.6rem;
+}
+.mat-toolbar.mat-primary{
+  background: rgb(197, 190, 157);
+}
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+.name{
+  margin-top: 0.9rem;
+  font-weight: normal;
+}
+
+.designation{
+  font-size: 0.7rem;
+  color: lightgray
+;}
+.example-container{
+  align-content: center;
+}
+.forms-widget{
+  font-size: 0.7rem;
+  padding-left: 1rem;
+}
+a{
+  span{
+    margin: 1rem;
+  }
+}
