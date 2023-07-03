@@ -8,7 +8,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path:'students',component:StudentsComponent},
- // { path: 'teachers', component: TeachersComponent },
+  // rutas hijas para el componente students con salida a product
+  { 
+    path:'',
+    component:StudentsComponent, 
+    children:[
+      { 
+        path:'product',
+        component:DashboardComponent
+      } 
+    ]
+  },
   { path:'admin', component: AdminComponent},
   { path:'home',component:HomeComponent}
 ];

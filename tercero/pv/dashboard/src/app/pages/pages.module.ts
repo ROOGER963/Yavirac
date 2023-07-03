@@ -18,6 +18,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatMenuModule } from '@angular/material/menu';
     AdminComponent,
     StudentsComponent,
     HomeComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductComponent,
   ],
   imports: [
     CommonModule,
