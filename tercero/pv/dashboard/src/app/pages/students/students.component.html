@@ -13,21 +13,23 @@
     <mat-divider></mat-divider>
 
 
-    <a mat-list-item href="#">
+    <a mat-list-item [routerLink]="['/students/dashboard']">
       <mat-icon>speed</mat-icon>
       <span>Dashboard</span>
     </a>
-    <a mat-list-item href="#">
+
+  
+    <a mat-list-item [routerLink]="['/students/product']">
       <mat-icon>track_changes</mat-icon>
-      <span>Apps</span>
+      <span>Product</span>
     </a>
-    <a mat-list-item href="#">
-      <mat-icon>email</mat-icon>
-      <span>Inbox</span>
+    <a mat-list-item [routerLink]="['/students/crud']">
+      <mat-icon>miscellaneous_services</mat-icon>
+      <span>CRUD</span>
     </a>
-    <a mat-list-item href="#">
-      <mat-icon>hub</mat-icon>
-      <span>Ui Elements</span>
+    <a mat-list-item [routerLink]="['/students/postman']">
+      <mat-icon>fax</mat-icon>
+      <span>Postman</span>
     </a>
       <span class="forms-widget">FORMS,TABLE & WIDGETS</span>
     <a mat-list-item href="#">
@@ -69,7 +71,6 @@
       <img src="../../../assets/logoRP.png" alt="">
       </button>      
     </mat-toolbar>
-    <!-- Add Content Here -->
-<app-product></app-product>    
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

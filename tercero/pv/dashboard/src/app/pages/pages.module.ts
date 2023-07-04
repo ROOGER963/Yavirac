@@ -19,6 +19,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ProductComponent } from './product/product.component';
+import { CrudComponent } from './crud/crud.component';
+import { PostmanComponent } from './postman/postman.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { ProductComponent } from './product/product.component';
     HomeComponent,
     DashboardComponent,
     ProductComponent,
+    CrudComponent,
+    PostmanComponent,
   ],
   imports: [
     CommonModule,
