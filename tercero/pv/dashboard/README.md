@@ -1,3 +1,5 @@
-![rutasdash](https://github.com/ROOGER963/boardjobs/blob/routes/tercero/pv/img/rutasdash.png)
-![rutascrud ](https://github.com/ROOGER963/boardjobs/blob/routes/tercero/pv/img/rutascrud.png)
-![rutasprod](https://github.com/ROOGER963/boardjobs/blob/routes/tercero/pv/img/rutasprod.png)
+![post](https://github.com/ROOGER963/boardjobs/blob/postman/tercero/pv/img/postman/post.jpeg)
+![postinput](https://github.com/ROOGER963/boardjobs/blob/postman/tercero/pv/img/postman/Postmanput.png)
+![doc](https://github.com/ROOGER963/boardjobs/blob/postman/tercero/pv/img/postman/doc.jpeg)
+![put](https://github.com/ROOGER963/boardjobs/blob/postman/tercero/pv/img/postman/put.jpeg)
+![delete](https://github.com/ROOGER963/boardjobs/blob/postman/tercero/pv/img/postman/delete.jpeg)
